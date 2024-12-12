@@ -22,7 +22,7 @@ def Set_text():
 def Exit_app():
     app.destroy()
 
-# Create the main window
+
 app = tk.Tk()
 app.title("GUI:Text to speech")
 app.resizable(False,False)
@@ -37,13 +37,13 @@ Frame1=Frame(app,bg="white",width=800,height=65).place(x=0,y=0)
 
 top_text=Label(app,text="Text to Speech GUI",font="Lato 20 bold",bg="white").place(x=260,y=20)
 
-# Create a text entry widget
+
 ueser_input = tk.Text(app, wrap=tk.WORD, height=10, width=50)
 ueser_input.pack(pady=10)
 ueser_input.place(x=200,y=80)
 
 
-# Create buttons
+
 Launch_sound = tk.Button(app, text="Play", font="arial 15 bold",bg="green",command=play_sound)
 Launch_sound.pack(pady=10)
 Launch_sound.place(x=200,y=280)
@@ -56,5 +56,5 @@ Exit = tk.Button(app, text="Exit", font="arial 15 bold",bg="yellow",command=Exit
 Exit.pack(pady=10)
 Exit.place(x=550,y=280)
 
-# Run the application
+
 app.mainloop()
