@@ -41,7 +41,7 @@ top_text=Label(app,text="Text to Speech GUI",font="Lato 20 bold",bg="white").pla
 ueser_input = tk.Text(app, wrap=tk.WORD, height=10, width=50)
 ueser_input.pack(pady=10)
 ueser_input.place(x=200,y=80)
-#text_entry.place(x=200,y=280)
+
 
 # Create buttons
 Launch_sound = tk.Button(app, text="Play", font="arial 15 bold",bg="green",command=play_sound)
